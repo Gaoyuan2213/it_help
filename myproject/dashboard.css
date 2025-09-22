@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background: #007BFF;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #0056b3;
+}
+
+/* 通用卡片样式 */
+.card {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+/* 🎨 不同角色的主题色 */
+.employee-card {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5); /* 蓝色 */
+}
+
+.itstaff-card {
+    background: linear-gradient(135deg, #66bb6a, #388e3c); /* 绿色 */
+}
+
+.admin-card {
+    background: linear-gradient(135deg, #ef5350, #c62828); /* 红色 */
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 8px 0;
+}
+
+.card ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.2s;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
