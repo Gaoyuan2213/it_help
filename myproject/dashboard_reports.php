@@ -2,17 +2,15 @@
 session_start();
 include 'db.php';
 
-// 权限检查：必须是 admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
-    exit("权限不足");
+    exit("permission insufficient");
 }
 
-// 总工单数
+
 $total_sql = "SELECT COUNT(*) AS total FROM tickets";
 $total_res = $conn->query($total_sql);
 $total = $total_res->fetch_assoc()['total'] ?? 0;
 
-// 按状态统计
 $status_sql = "SELECT status, COUNT(*) AS count FROM tickets GROUP BY status";
 $status_res = $conn->query($status_sql);
 $status_data = [];
@@ -20,7 +18,6 @@ while($row = $status_res->fetch_assoc()) {
     $status_data[$row['status']] = intval($row['count']);
 }
 
-// 按优先级统计
 $priority_sql = "SELECT priority, COUNT(*) AS count FROM tickets GROUP BY priority";
 $priority_res = $conn->query($priority_sql);
 $priority_data = [];
@@ -28,7 +25,6 @@ while($row = $priority_res->fetch_assoc()) {
     $priority_data[$row['priority']] = intval($row['count']);
 }
 
-// 按类别统计
 $category_sql = "SELECT category, COUNT(*) AS count FROM tickets GROUP BY category";
 $category_res = $conn->query($category_sql);
 $category_data = [];
@@ -76,7 +72,7 @@ while($row = $category_res->fetch_assoc()) {
 </div>
 
 <script>
-// 状态图表
+
 const statusCtx = document.getElementById('statusChart').getContext('2d');
 new Chart(statusCtx, {
     type: 'pie',
@@ -90,7 +86,7 @@ new Chart(statusCtx, {
     }
 });
 
-// 优先级图表
+
 const priorityCtx = document.getElementById('priorityChart').getContext('2d');
 new Chart(priorityCtx, {
     type: 'bar',
@@ -108,7 +104,7 @@ new Chart(priorityCtx, {
     }
 });
 
-// 类别图表
+
 const categoryCtx = document.getElementById('categoryChart').getContext('2d');
 new Chart(categoryCtx, {
     type: 'bar',
