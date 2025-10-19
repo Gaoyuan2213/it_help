@@ -1,6 +1,6 @@
 <?php
 session_start();
-include  '../db.php';
+include  'db.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'employee') {
     header("Location: index.php");
@@ -11,7 +11,6 @@ if (!isset($_SESSION['id'])) {
 }
 $userid = $_SESSION['id'];
 
-// 查询属于当前用户的工单
 $sql = "SELECT * FROM tickets WHERE user_id = $userid ORDER BY created_at DESC";
 $result = $conn->query($sql);
 ?>

@@ -7,10 +7,8 @@ if (!isset($_SESSION['role'])) {
     exit();
 }
 
-// 从 Session 中拿当前用户ID
 $userid = $_SESSION['id'];
 
-// 查询当前登录用户资料
 $sql = "SELECT name, email, role FROM users WHERE user_id = $userid";
 $result = $conn->query($sql);
 $user = $result->fetch_assoc();

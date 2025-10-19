@@ -1,9 +1,9 @@
 <?php
 session_start();
-include '../db.php';
+include 'db.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
-    exit("权限不足");
+    exit("permission insufficient");
 }
 
 $message = "";
@@ -21,9 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_user'])) {
 
     
     if ($conn->query($sql)) {
-        $message = "用户创建成功！";
+        $message = "Users create success！";
     } else {
-        $message = "创建失败: " . $conn->error;
+        $message = "Creation failed: " . $conn->error;
     }
 }
 
