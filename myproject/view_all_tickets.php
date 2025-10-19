@@ -1,13 +1,11 @@
 <?php
 session_start();
-include  '../db.php';
+include  'db.php';
 
-// 权限检查：必须是 admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
-    exit("权限不足");
+    exit("insufficient permission");
 }
 
-// 查询所有工单
 $sql = "SELECT t.id, t.title, t.category, t.priority, t.status, 
                t.created_at, u.name AS submitter, i.name AS assignee
         FROM tickets t
