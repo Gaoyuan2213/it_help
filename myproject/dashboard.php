@@ -32,9 +32,9 @@ $name = $_SESSION['name'];
       <div class="card employee-card">
         <h2>Employee Menu</h2>
         <ul>
-          <li><a href="#">My Profile</a></li>
-          <li><a href="#">Create Ticket</a></li>
-          <li><a href="#">My Tickets</a></li>
+          <li><a href="my_profile.php">My Profile</a></li>
+          <li><a href="create_ticket.php">Create Ticket</a></li>
+          <li><a href="my_ticket.php">My Tickets</a></li>
         </ul>
       </div>
     <?php } ?>
@@ -42,10 +42,9 @@ $name = $_SESSION['name'];
       <div class="card itstaff-card">
         <h2>IT Staff Menu</h2>
         <ul>
-          <li><a href="#">My Profile</a></li>
-          <li><a href="#">Assigned Tickets</a></li>
-          <li><a href="#">All Open Tickets</a></li>
-          <li><a href="#">Update Ticket Status</a></li>
+          <li><a href="my_profile.php">My Profile</a></li>
+          <li><a href="assigned_tickets.php">Assigned Tickets</a></li>
+          <li><a href="open_tickets.php">All Open Tickets</a></li>
         </ul>
       </div>
     <?php } ?>
@@ -54,10 +53,10 @@ $name = $_SESSION['name'];
       <div class="card admin-card">
         <h2>Admin Menu</h2>
         <ul>
-          <li><a href="#">My Profile</a></li>
-          <li><a href="#">User Management</a></li>
-          <li><a href="#">View All Tickets</a></li>
-          <li><a href="#">Reports / Dashboard</a></li>
+          <li><a href="my_profile.php">My Profile</a></li>
+          <li><a href="managev_user.php">User Management</a></li>
+          <li><a href="view_all_tickets.php">View All Tickets</a></li>
+          <li><a href="dashboard_reports.php">Reports / Dashboard</a></li>
         </ul>
       </div>
     <?php } ?>
