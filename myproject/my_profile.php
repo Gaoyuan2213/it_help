@@ -1,17 +1,17 @@
 <?php
 session_start();
-include '../db.php';
+include 'db.php';
 
-// 必须登录
+
 if (!isset($_SESSION['role'])) {
     header("Location: index.php");
     exit();
 }
 
-// 从 Session 中拿当前用户ID
+
 $userid = $_SESSION['id'];
 
-// 查询当前登录用户资料
+
 $sql = "SELECT name, email, role FROM users WHERE user_id = $userid";
 $result = $conn->query($sql);
 $user = $result->fetch_assoc();

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../db.php';
+include 'db.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'employee') {
     exit("权限不足");

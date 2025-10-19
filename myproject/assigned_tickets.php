@@ -1,6 +1,6 @@
 <?php
 session_start();
-include  '../db.php';
+include  'db.php';
 
 // 权限检查：必须是 it_staff
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'it_staff') {

@@ -1,18 +1,18 @@
 <?php
 session_start();
-include  '../db.php';
+include  'db.php';
 
-// 权限检查：必须是 employee
+
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'employee') {
     header("Location: index.php");
     exit();
 }
 if (!isset($_SESSION['id'])) {
-    die("用户未登录，缺少 user_id");
+    die("lack of user_id");
 }
 $userid = $_SESSION['id'];
 
-// 查询属于当前用户的工单
+
 $sql = "SELECT * FROM tickets WHERE user_id = $userid ORDER BY created_at DESC";
 $result = $conn->query($sql);
 ?>
