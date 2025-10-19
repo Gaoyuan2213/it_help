@@ -1,35 +1,33 @@
 <?php
 session_start();
-include '../db.php';
+include 'db.php';
 
-// 权限检查：必须是 admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
-    exit("权限不足");
+    exit("insufficient permission");
 }
 
 $message = "";
 
-// 处理新增用户
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_user'])) {
     $name = $conn->real_escape_string($_POST['name']);
     $email = $conn->real_escape_string($_POST['email']);
     $role = $conn->real_escape_string($_POST['role']);
-    $password = $conn->real_escape_string($_POST['password']); // 简单明文，生产环境需 hash
+    $password = $conn->real_escape_string($_POST['password']); 
     $hash = password_hash($password, PASSWORD_DEFAULT);
 
-// 插入语句：存储 $hash 而不是明文密码
+
     $sql = "INSERT INTO users (name, email, role, password) 
             VALUES ('$name', '$email', '$role', '$hash')";
 
     
     if ($conn->query($sql)) {
-        $message = "用户创建成功！";
+        $message = "creation successful！";
     } else {
-        $message = "创建失败: " . $conn->error;
+        $message = "fail: " . $conn->error;
     }
 }
 
-// 处理删除用户
+
 if (isset($_GET['delete_id'])) {
     $delete_id = intval($_GET['delete_id']);
     $conn->query("DELETE FROM users WHERE user_id = $delete_id");
@@ -37,7 +35,6 @@ if (isset($_GET['delete_id'])) {
     exit();
 }
 
-// 查询所有用户
 $result = $conn->query("SELECT user_id, name, email, role FROM users ORDER BY user_id ASC");
 ?>
 
@@ -56,7 +53,7 @@ $result = $conn->query("SELECT user_id, name, email, role FROM users ORDER BY us
         <div class="alert alert-info"><?= $message ?></div>
     <?php endif; ?>
 
-    <!-- 新增用户表单 -->
+    <!-- Add user form -->
     <h4 class="mt-4">Add New User</h4>
     <form method="POST" class="row g-3">
         <div class="col-md-3">
@@ -80,7 +77,7 @@ $result = $conn->query("SELECT user_id, name, email, role FROM users ORDER BY us
         </div>
     </form>
 
-    <!-- 用户表格 -->
+    <!-- user form -->
     <table class="table table-bordered mt-4">
         <thead>
             <tr>
