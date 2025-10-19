@@ -1,16 +1,15 @@
 <?php
 session_start();
-include '../db.php';
+include 'db.php';
 
-// 权限检查：必须是 it_staff
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'it_staff') {
-    exit("权限不足");
+    exit("insufficient permission");
 }
 
 $staff_id = $_SESSION['id'];
 $message = "";
 
-// 处理状态更新
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status'])) {
     $ticket_id = intval($_POST['ticket_id']);
     $new_status = isset($_POST['status']) ? $_POST['status'] : null;
@@ -20,16 +19,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status'])) {
                        SET status = '$new_status' 
                        WHERE id = $ticket_id AND assigned_to = $staff_id";
         if ($conn->query($update_sql)) {
-            $message = "工单状态已更新！";
+            $message = "Ticket status updated！";
         } else {
-            $message = "操作失败: " . $conn->error;
+            $message = "Operation failed: " . $conn->error;
         }
     } else {
-        $message = "请选择有效状态！";
+        $message = "Please select a valid status！";
     }
 }
 
-// 查询当前 IT Staff 已分配的工单
 $sql = "SELECT t.id, t.title, t.category, t.priority, t.status, u.name as submitter
         FROM tickets t
         JOIN users u ON t.user_id = u.user_id
