@@ -13,6 +13,5 @@ RUN apt update && apt install -y \
 
 COPY . /app
 
-# 启动命令：使用 PHP 内置 Web 服务器
-# Railway 会自动将 $PORT 注入到环境中
+
 CMD ["php", "-S", "0.0.0.0:8000", "-t", "."]
