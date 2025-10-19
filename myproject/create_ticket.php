@@ -3,13 +3,12 @@ session_start();
 include 'db.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'employee') {
-    exit("权限不足");
+    exit("insufficient permission");
 }
 
 $userid = $_SESSION['id'];
 $message = "";
 
-// 处理表单提交
 if (isset($_POST['create_ticket'])) {
     $title = $conn->real_escape_string($_POST['title']);
     $description = $conn->real_escape_string($_POST['description']);
@@ -21,9 +20,9 @@ if (isset($_POST['create_ticket'])) {
 
 
     if ($conn->query($sql)) {
-        $message = "工单创建成功！";
+        $message = "ticket created！";
     } else {
-        $message = "创建失败: " . $conn->error;
+        $message = "fialed: " . $conn->error;
     }
 }
 ?>

@@ -1,10 +1,9 @@
 <?php
 session_start();
-include 'db.php';
-
+include '../db.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
-    exit("permission denied!");
+    exit("权限不足");
 }
 
 $message = "";
@@ -22,9 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_user'])) {
 
     
     if ($conn->query($sql)) {
-        $message = "account creatation successful ！";
+        $message = "用户创建成功！";
     } else {
-        $message = "account creatation failed!: " . $conn->error;
+        $message = "创建失败: " . $conn->error;
     }
 }
 
@@ -36,7 +35,7 @@ if (isset($_GET['delete_id'])) {
     exit();
 }
 
-
+// 查询所有用户
 $result = $conn->query("SELECT user_id, name, email, role FROM users ORDER BY user_id ASC");
 ?>
 
@@ -55,7 +54,7 @@ $result = $conn->query("SELECT user_id, name, email, role FROM users ORDER BY us
         <div class="alert alert-info"><?= $message ?></div>
     <?php endif; ?>
 
-   
+    <!-- 新增用户表单 -->
     <h4 class="mt-4">Add New User</h4>
     <form method="POST" class="row g-3">
         <div class="col-md-3">
@@ -79,7 +78,7 @@ $result = $conn->query("SELECT user_id, name, email, role FROM users ORDER BY us
         </div>
     </form>
 
-
+    <!-- 用户表格 -->
     <table class="table table-bordered mt-4">
         <thead>
             <tr>

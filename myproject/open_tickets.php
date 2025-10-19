@@ -1,10 +1,9 @@
 <?php
 session_start();
-include 'db.php';
-
+include '../db.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'it_staff') {
-    exit("Insufficient permissions");
+    exit("权限不足");
 }
 
 $staff_id = $_SESSION['id'];
@@ -25,11 +24,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status'])) {
             $message = "Operation failed: " . $conn->error;
         }
     } else {
-        $message = "Please select a valid status! ";
+        $message = "请选择有效状态！";
     }
 }
 
-
+// 查询当前 IT Staff 已分配的工单
 $sql = "SELECT t.id, t.title, t.category, t.priority, t.status, u.name as submitter
         FROM tickets t
         JOIN users u ON t.user_id = u.user_id

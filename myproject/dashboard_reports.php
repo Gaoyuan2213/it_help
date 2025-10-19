@@ -1,16 +1,17 @@
 <?php
 session_start();
-include 'db.php';
+include '../db.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
-    exit("permission insufficient");
+    exit("权限不足");
 }
 
-
+// 总工单数
 $total_sql = "SELECT COUNT(*) AS total FROM tickets";
 $total_res = $conn->query($total_sql);
 $total = $total_res->fetch_assoc()['total'] ?? 0;
 
+// 按状态统计
 $status_sql = "SELECT status, COUNT(*) AS count FROM tickets GROUP BY status";
 $status_res = $conn->query($status_sql);
 $status_data = [];
@@ -72,7 +73,7 @@ while($row = $category_res->fetch_assoc()) {
 </div>
 
 <script>
-
+// 状态图表
 const statusCtx = document.getElementById('statusChart').getContext('2d');
 new Chart(statusCtx, {
     type: 'pie',
@@ -86,7 +87,7 @@ new Chart(statusCtx, {
     }
 });
 
-
+// 优先级图表
 const priorityCtx = document.getElementById('priorityChart').getContext('2d');
 new Chart(priorityCtx, {
     type: 'bar',
