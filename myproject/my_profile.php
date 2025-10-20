@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../db.php';
+include 'db.php';
 
 if (!isset($_SESSION['role'])) {
     header("Location: index.php");
