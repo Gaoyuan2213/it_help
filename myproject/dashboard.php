@@ -54,7 +54,7 @@ $name = $_SESSION['name'];
         <h2>Admin Menu</h2>
         <ul>
           <li><a href="my_profile.php">My Profile</a></li>
-          <li><a href="managev_user.php">User Management</a></li>
+          <li><a href="manage_user.php">User Management</a></li>
           <li><a href="view_all_tickets.php">View All Tickets</a></li>
           <li><a href="dashboard_reports.php">Reports / Dashboard</a></li>
         </ul>
