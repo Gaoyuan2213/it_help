@@ -1,0 +1,31 @@
+========================================================
+Microsoft 365 Automation - Execution Transcript
+Author: Gaoyuan Zhang
+Date: 2025-10-29 04:30:12
+========================================================
+
+[STEP 1] Creating Microsoft 365 Users...
+✅ Created user: alice@gaoyuanzhang.onmicrosoft.com
+✅ Created user: bob@gaoyuanzhang.onmicrosoft.com
+✅ Created user: charlie@gaoyuanzhang.onmicrosoft.com
+
+[STEP 2] Assigning Licenses...
+✅ License assigned: M365 E5 Developer
+⚠️ Warning: noah@gaoyuanzhang.onmicrosoft.com already licensed.
+
+[STEP 3] Syncing Department Groups & Mailboxes...
+✅ Added 6 members to “IT Department”
+✅ Added 5 members to “Admin Department”
+✅ Added 5 members to “Employee Department”
+
+[STEP 4] Assigning Shared Mailbox Permissions...
+✅ Permission granted: Admin Department → admin@sharedmailbox
+✅ Permission granted: IT Department → it@sharedmailbox
+✅ Permission granted: Employee Department → shared-employee@sharedmailbox
+
+[SUMMARY]
+Total Users: 18
+Licensed Users: 15
+Unlicensed Users: 3
+Logs saved to: C:\Users\94712\Desktop\M365automation\logs\M365_Automation_Log_20251029.txt
+========================================================

@@ -1,0 +1,1002 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20251029044654
+用户名: 张高源\94712
+RunAs 用户: 张高源\94712
+配置名称: 
+计算机: 张高源 (Microsoft Windows NT 10.0.26100.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 32268
+PSVersion: 5.1.26100.6899
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.6899
+BuildVersion: 10.0.26100.6899
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+已启动脚本，输出文件为 C:\Users\94712\Desktop\M365automation\logs\M365_Automation_Log_20251029_044654.txt
+馃殌 Starting Microsoft 365 Automation Sequence...
+===================================================
+
+馃З Step 1: Creating Microsoft 365 Users...
+Welcome to Microsoft Graph!
+
+Connected via delegated access using 14d82eec-204b-4c2f-b7e8-296a70dab67e
+Readme: https://aka.ms/graph/sdk/powershell
+SDK Docs: https://aka.ms/graph/sdk/powershell/docs
+API Docs: https://aka.ms/graph/docs
+
+NOTE: You can use the -NoWelcome parameter to suppress this message.
+Creating user: Olivia Chen <olivia@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:57
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 2fc135df-2d0c-4e06-836d-a734a68d253d
+client-request-id             : 907dd2df-2768-4545-98d3-989b3b0cc948
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:57 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:57
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 2fc135df-2d0c-4e06-836d-a734a68d253d
+client-request-id             : 907dd2df-2768-4545-98d3-989b3b0cc948
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:57 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Olivia Chen
+Creating user: Liam Zhang <liam@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:57
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : a49685c3-ce47-467d-b789-77d6371fbce0
+client-request-id             : 9dbcf634-f5c8-4c0a-b8db-69691f31c734
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:57 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:57
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : a49685c3-ce47-467d-b789-77d6371fbce0
+client-request-id             : 9dbcf634-f5c8-4c0a-b8db-69691f31c734
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:57 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Liam Zhang
+Creating user: Ethan Liu <ethan@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:58
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 80d9ee0a-c455-4611-8d6e-445880c9aa27
+client-request-id             : 782e0d73-aca0-4607-ba37-06cf7c5653ec
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:58 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:58
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 80d9ee0a-c455-4611-8d6e-445880c9aa27
+client-request-id             : 782e0d73-aca0-4607-ba37-06cf7c5653ec
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:58 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Ethan Liu
+Creating user: Sophia Wang <sophia@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:58
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 2c70274f-69d0-403c-82e5-283c066eb50f
+client-request-id             : ae7c50ad-1514-40ec-9e74-258b734a96c6
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:58 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:58
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 2c70274f-69d0-403c-82e5-283c066eb50f
+client-request-id             : ae7c50ad-1514-40ec-9e74-258b734a96c6
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:58 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Sophia Wang
+Creating user: Noah Sun <noah@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:58
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 73cec839-3048-45f7-9d99-01ace3904a09
+client-request-id             : 44884f86-49b0-4d67-8d2a-02ff4c3c9468
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:58 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:58
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 73cec839-3048-45f7-9d99-01ace3904a09
+client-request-id             : 44884f86-49b0-4d67-8d2a-02ff4c3c9468
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:58 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Noah Sun
+Creating user: Ava Lin <ava@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:59
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : a70f9112-9400-43ab-8863-5931537af1e5
+client-request-id             : 3cd4f5cc-9624-45c6-ad16-1f5268282d73
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:59 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:59
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : a70f9112-9400-43ab-8863-5931537af1e5
+client-request-id             : 3cd4f5cc-9624-45c6-ad16-1f5268282d73
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:59 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Ava Lin
+Creating user: William Guo <william@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:59
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : fbc7b397-c11c-41c5-b477-4bdc888f5fcd
+client-request-id             : 485bf828-eca9-45d7-b78c-3fd48b4fcf94
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:59 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:59
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : fbc7b397-c11c-41c5-b477-4bdc888f5fcd
+client-request-id             : 485bf828-eca9-45d7-b78c-3fd48b4fcf94
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:59 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: William Guo
+Creating user: Isabella Fang <isabella@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:59
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 558e3f96-8237-4a6b-98f5-46155097416d
+client-request-id             : 0fcbdb0f-3bf9-4fda-88d1-d6408b89ec02
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:59 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:46:59
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 558e3f96-8237-4a6b-98f5-46155097416d
+client-request-id             : 0fcbdb0f-3bf9-4fda-88d1-d6408b89ec02
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:46:59 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Isabella Fang
+Creating user: Eddie Gao <eddie@gaoyuanzhang.onmicrosoft.com>
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:47:00
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 5b86678e-5496-451d-bf40-c82c7b7a117d
+client-request-id             : 253698a2-8077-4182-87cf-bd9d72e3eb60
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","Role
+Instance":"QB1PEPF0000579B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:47:00 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_C
+reateExpanded]，Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+New-MgUser : Another object with the same value for property userPrincipalName already exists.
+
+Status: 400 (BadRequest)
+ErrorCode: Request_BadRequest
+Date: 2025-10-29T07:47:00
+
+Headers:
+Transfer-Encoding             : chunked
+Vary                          : Accept-Encoding
+Strict-Transport-Security     : max-age=31536000
+request-id                    : 5b86678e-5496-451d-bf40-c82c7b7a117d
+client-request-id             : 253698a2-8077-4182-87cf-bd9d72e3eb60
+x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF000057
+9B"}}
+x-ms-resource-unit            : 1
+Cache-Control                 : no-cache
+Date                          : Wed, 29 Oct 2025 07:47:00 GMT
+
+
+所在位置 C:\Users\94712\Desktop\M365automation\scripts\1_Create-M365-Users.ps1:27 字符: 9
++         New-MgUser `
++         ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: ({ Headers = , b...softGraphUser }:<>f__AnonymousType53`2) [New-MgUser_CreateExpanded]，Exceptio
+    n
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Graph.PowerShell.Cmdlets.NewMgUser_CreateExpanded
+鉁?Successfully created: Eddie Gao
+
+User creation complete. Current tenant users:
+
+鉂?Script not found: 2_assign_license.ps1
+
+馃З Step 3: Syncing Department Groups & Mailboxes...
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/895a62c4-acf0-461b-89bb-d09a54329291/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: c2a97305-eaa8-4bfa-8cf4-92db4c132172
+client-request-id: 3e0ca745-fdc9-4870-ad6f-ad172d79d8c9
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:00 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:01","request-id":"c2a97305-eaa8-4bfa-8cf4-92db4c132172","client-request-id":"3e0ca745-fdc9-4870-ad6f-ad172d79d8c9"}}}”
+警告: 鈿狅笍 Failed to add Alice_Admin@gaoyuanzhang.onmicrosoft.com to Admin Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/895a62c4-acf0-461b-89bb-d09a54329291/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 8dbc03fa-b07f-4510-b112-9a192e12c5b5
+client-request-id: aea9ea35-a4b1-47de-8a03-1a05887cac31
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:00 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:01","request-id":"8dbc03fa-b07f-4510-b112-9a192e12c5b5","client-request-id":"aea9ea35-a4b1-47de-8a03-1a05887cac31"}}}”
+警告: 鈿狅笍 Failed to add bob@gaoyuanzhang.onmicrosoft.com to Admin Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/895a62c4-acf0-461b-89bb-d09a54329291/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 23d4eb25-b2a1-40cf-beb2-967f5a548bf9
+client-request-id: 8dc836c9-11b8-4b17-bc31-c29aa6d90685
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:02 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:02","request-id":"23d4eb25-b2a1-40cf-beb2-967f5a548bf9","client-request-id":"8dc836c9-11b8-4b17-bc31-c29aa6d90685"}}}”
+警告: 鈿狅笍 Failed to add charlie@gaoyuanzhang.onmicrosoft.com to Admin Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/895a62c4-acf0-461b-89bb-d09a54329291/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 9b4d3efa-d76a-4e92-a43e-aa4c807c689d
+client-request-id: 386c16e4-40aa-4d8e-baa6-7137a90c818a
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:03 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:03","request-id":"9b4d3efa-d76a-4e92-a43e-aa4c807c689d","client-request-id":"386c16e4-40aa-4d8e-baa6-7137a90c818a"}}}”
+警告: 鈿狅笍 Failed to add Iloveeddiebear@gaoyuanzhang.onmicrosoft.com to Admin Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/895a62c4-acf0-461b-89bb-d09a54329291/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 54a8b10a-edfb-4a76-811c-67677a632d3b
+client-request-id: fdff5b34-86e8-49ef-9ba6-ecb570b2382d
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:04 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:05","request-id":"54a8b10a-edfb-4a76-811c-67677a632d3b","client-request-id":"fdff5b34-86e8-49ef-9ba6-ecb570b2382d"}}}”
+警告: 鈿狅笍 Failed to add liam@gaoyuanzhang.onmicrosoft.com to Admin Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/895a62c4-acf0-461b-89bb-d09a54329291/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 0d559054-49ad-404d-b1ac-511cb1cd5045
+client-request-id: 55d2acfd-e301-4833-bb34-e9e883ac6b8f
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:05 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:06","request-id":"0d559054-49ad-404d-b1ac-511cb1cd5045","client-request-id":"55d2acfd-e301-4833-bb34-e9e883ac6b8f"}}}”
+警告: 鈿狅笍 Failed to add olivia@gaoyuanzhang.onmicrosoft.com to Admin Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: fbb83eab-7362-43d3-ad12-01eef31144ec
+client-request-id: 1a2c7d1c-3a8f-4487-a362-888dd985197f
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:07 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:07","request-id":"fbb83eab-7362-43d3-ad12-01eef31144ec","client-request-id":"1a2c7d1c-3a8f-4487-a362-888dd985197f"}}}”
+警告: 鈿狅笍 Failed to add alice@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: d633a217-ab9b-493f-a12e-7f8c515bdc6b
+client-request-id: c0cf154b-e866-4500-8326-b46e0c1f2d79
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:08 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:08","request-id":"d633a217-ab9b-493f-a12e-7f8c515bdc6b","client-request-id":"c0cf154b-e866-4500-8326-b46e0c1f2d79"}}}”
+警告: 鈿狅笍 Failed to add Eddie_IT@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: ac4b9887-0bb1-43d3-a4c8-46c3d042e0e7
+client-request-id: 89b49dcc-e283-423f-8962-89433aed06b0
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:09 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:09","request-id":"ac4b9887-0bb1-43d3-a4c8-46c3d042e0e7","client-request-id":"89b49dcc-e283-423f-8962-89433aed06b0"}}}”
+警告: 鈿狅笍 Failed to add z_eddie@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: a3c2f777-b398-4a7b-b3f2-5c0818d5e009
+client-request-id: 6c95fae7-d93d-4bb7-8ee7-c10b828468ad
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:10 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:11","request-id":"a3c2f777-b398-4a7b-b3f2-5c0818d5e009","client-request-id":"6c95fae7-d93d-4bb7-8ee7-c10b828468ad"}}}”
+警告: 鈿狅笍 Failed to add ethan@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 550bb7ef-e693-4c43-b54a-92b23099aaf5
+client-request-id: 41be3a77-1c06-47f3-b299-fc7340884b30
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:11 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:11","request-id":"550bb7ef-e693-4c43-b54a-92b23099aaf5","client-request-id":"41be3a77-1c06-47f3-b299-fc7340884b30"}}}”
+警告: 鈿狅笍 Failed to add GaoyuanZhang@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 33414872-d2ed-4d69-92f8-b47038dd7355
+client-request-id: 0aeb5630-0a3d-4181-ab6e-641a77eddc8b
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:12 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:12","request-id":"33414872-d2ed-4d69-92f8-b47038dd7355","client-request-id":"0aeb5630-0a3d-4181-ab6e-641a77eddc8b"}}}”
+警告: 鈿狅笍 Failed to add itintern01@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: bbb3ba68-fe41-43c6-a64c-41e15ea29441
+client-request-id: 6c40273d-4f71-44f0-9b0c-98b77c3e45b9
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:13 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:13","request-id":"bbb3ba68-fe41-43c6-a64c-41e15ea29441","client-request-id":"6c40273d-4f71-44f0-9b0c-98b77c3e45b9"}}}”
+警告: 鈿狅笍 Failed to add noah@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/8c189ce5-aac3-4953-9008-5bba61b99d1f/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: a8b35b0d-caf7-4b3c-b617-0c104c38e4bb
+client-request-id: 3b993a27-5f32-4092-8c9b-fee037376925
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:14 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:14","request-id":"a8b35b0d-caf7-4b3c-b617-0c104c38e4bb","client-request-id":"3b993a27-5f32-4092-8c9b-fee037376925"}}}”
+警告: 鈿狅笍 Failed to add sophia@gaoyuanzhang.onmicrosoft.com to IT Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/e09d5438-bfbd-47ee-95d2-bfe4855b2552/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: c1434279-5de5-479e-bc33-893aaa811e32
+client-request-id: 3175ab72-5f49-46a3-87fe-1256559973ef
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:15 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:15","request-id":"c1434279-5de5-479e-bc33-893aaa811e32","client-request-id":"3175ab72-5f49-46a3-87fe-1256559973ef"}}}”
+警告: 鈿狅笍 Failed to add ava@gaoyuanzhang.onmicrosoft.com to Employee Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/e09d5438-bfbd-47ee-95d2-bfe4855b2552/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 14805799-eaa8-42c0-9a7a-de4c53d67d40
+client-request-id: 5c82e603-6c77-4799-9be8-9009c5f548c2
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:16 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:16","request-id":"14805799-eaa8-42c0-9a7a-de4c53d67d40","client-request-id":"5c82e603-6c77-4799-9be8-9009c5f548c2"}}}”
+警告: 鈿狅笍 Failed to add bob_Employee@gaoyuanzhang.onmicrosoft.com to Employee Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/e09d5438-bfbd-47ee-95d2-bfe4855b2552/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: ffac4be4-e2a2-4f9f-8234-054c758c65ce
+client-request-id: fec0225f-a819-44d2-8746-80429ec2fb6e
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:17 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:17","request-id":"ffac4be4-e2a2-4f9f-8234-054c758c65ce","client-request-id":"fec0225f-a819-44d2-8746-80429ec2fb6e"}}}”
+警告: 鈿狅笍 Failed to add eddie@gaoyuanzhang.onmicrosoft.com to Employee Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/e09d5438-bfbd-47ee-95d2-bfe4855b2552/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 8e66bed5-cbd8-4e46-ac2a-4e6fb9edeeb3
+client-request-id: 224fbc82-3eca-4e8d-897c-742aa26199b1
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:18 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:19","request-id":"8e66bed5-cbd8-4e46-ac2a-4e6fb9edeeb3","client-request-id":"224fbc82-3eca-4e8d-897c-742aa26199b1"}}}”
+警告: 鈿狅笍 Failed to add isabella@gaoyuanzhang.onmicrosoft.com to Employee Department: Response status code does not indicate success: BadRequest (Bad Request).
+PS>TerminatingError(Invoke-MgGraphRequest):“POST https://graph.microsoft.com/v1.0/groups/e09d5438-bfbd-47ee-95d2-bfe4855b2552/members/$ref
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: d2df43ac-7c14-460c-bda0-05058bb21214
+client-request-id: a8f46ea9-73df-4c5b-abaf-88de230ab0d0
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Canada East","Slice":"E","Ring":"3","ScaleUnit":"000","RoleInstance":"QB1PEPF00005796"}}
+x-ms-resource-unit: 1
+Cache-Control: no-cache
+Date: Wed, 29 Oct 2025 07:47:19 GMT
+Content-Type: application/json
+
+{"error":{"code":"Request_BadRequest","message":"One or more added object references already exist for the following modified properties: 'members'.","innerError":{"date":"2025-10-29T07:47:20","request-id":"d2df43ac-7c14-460c-bda0-05058bb21214","client-request-id":"a8f46ea9-73df-4c5b-abaf-88de230ab0d0"}}}”
+警告: 鈿狅笍 Failed to add william@gaoyuanzhang.onmicrosoft.com to Employee Department: Response status code does not indicate success: BadRequest (Bad Request).
+DisplayName             UserPrincipalName                           Department JobTitle
+-----------             -----------------                           ---------- --------
+Admin Shared Mailbox    Admin@gaoyuanzhang.onmicrosoft.com
+Alice Wang              alice@gaoyuanzhang.onmicrosoft.com                     Helpdesk Assistant
+Alice                   Alice_Admin@gaoyuanzhang.onmicrosoft.com
+Ava Lin                 ava@gaoyuanzhang.onmicrosoft.com                       Customer Service Representative
+Bob Chen                bob@gaoyuanzhang.onmicrosoft.com
+bob                     bob_Employee@gaoyuanzhang.onmicrosoft.com
+Charlie Zhang           charlie@gaoyuanzhang.onmicrosoft.com                   Finance Assistant
+Eddie Gao               eddie@gaoyuanzhang.onmicrosoft.com                     Office Assistant
+Eddie                   Eddie_IT@gaoyuanzhang.onmicrosoft.com                  IT_Staff
+Employee Shared Mailbox Employee1@gaoyuanzhang.onmicrosoft.com
+Ethan Liu               ethan@gaoyuanzhang.onmicrosoft.com                     Network Engineer
+Gaoyuan Zhang           GaoyuanZhang@gaoyuanzhang.onmicrosoft.com
+Kalifa Clarke           Iloveeddiebear@gaoyuanzhang.onmicrosoft.com
+Isabella Fang           isabella@gaoyuanzhang.onmicrosoft.com                  Marketing Coordinator
+IT Shared Mailbox       IT@gaoyuanzhang.onmicrosoft.com
+IT Intern 01            itintern01@gaoyuanzhang.onmicrosoft.com                Helpdesk Trainee
+Liam Zhang              liam@gaoyuanzhang.onmicrosoft.com                      Operations Manager
+Noah Sun                noah@gaoyuanzhang.onmicrosoft.com                      Cloud Engineer
+Olivia Chen             olivia@gaoyuanzhang.onmicrosoft.com                    System Administrator
+Sophia Wang             sophia@gaoyuanzhang.onmicrosoft.com                    IT Support Specialist
+William Guo             william@gaoyuanzhang.onmicrosoft.com                   Sales Associate
+Eddie Zhang             z_eddie@gaoyuanzhang.onmicrosoft.com
+Welcome to Microsoft Graph!
+
+Connected via delegated access using 14d82eec-204b-4c2f-b7e8-296a70dab67e
+Readme: https://aka.ms/graph/sdk/powershell
+SDK Docs: https://aka.ms/graph/sdk/powershell/docs
+API Docs: https://aka.ms/graph/docs
+
+NOTE: You can use the -NoWelcome parameter to suppress this message.
+
+
+馃З Step 4: Assigning Shared Mailbox Permissions...
+馃敆 Connecting to Exchange Online...
+
+----------------------------------------------------------------------------------------
+This V3 EXO PowerShell module contains new REST API backed Exchange Online cmdlets which doesn't require WinRM for Client-Server communication. You can now run these cmdlets after turning off WinRM Basic Auth in your client machine thus making it more secure. 
+
+Unlike the EXO* prefixed cmdlets, the cmdlets in this module support full functional parity with the RPS (V1) cmdlets.
+
+V3 cmdlets in the downloaded module are resilient to transient failures, handling retries and throttling errors inherently. 
+
+REST backed EOP and SCC cmdlets are also available in the V3 module. Similar to EXO, the cmdlets can be run without WinRM basic auth enabled. 
+
+For more information check https://aka.ms/exov3-module
+
+Starting with EXO V3.7, use the LoadCmdletHelp parameter alongside Connect-ExchangeOnline to access the Get-Help cmdlet, as it will not be loaded by default
+----------------------------------------------------------------------------------------
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889380"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for Alice_Admin@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889380"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for Alice_Admin@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889409"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for bob@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889409"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for bob@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889410"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for charlie@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889410"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for charlie@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889665"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for Iloveeddiebear@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889665"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for Iloveeddiebear@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889719"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for liam@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889719"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for liam@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889722"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for olivia@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889722"的对象"CN=Admin,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for olivia@gaoyuanzhang.onmicrosoft.com to admin@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889408"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for alice@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889408"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for alice@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889378"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for Eddie_IT@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889378"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for Eddie_IT@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889145"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for z_eddie@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889145"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for z_eddie@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889714"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for ethan@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889714"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for ethan@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-614394"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for GaoyuanZhang@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-614394"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for GaoyuanZhang@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889402"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for itintern01@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889402"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for itintern01@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889718"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for noah@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889718"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for noah@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889715"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for sophia@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889715"的对象"CN=IT,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for sophia@gaoyuanzhang.onmicrosoft.com to it@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889716"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for ava@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889716"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for ava@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889381"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for bob_Employee@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889381"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for bob_Employee@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889717"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for eddie@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889717"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for eddie@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889721"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for isabella@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889721"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for isabella@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889720"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added FULL ACCESS for william@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+
+警告: 帐户"S-1-5-21-1545902994-1565394382-3062680054-889720"的对象"CN=Employee,OU=gaoyuanzhang.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=canpr01a019,DC=prod,DC=outlook,DC=com"上已存在相应的访问控制条目。
+鉁?Added SEND AS for william@gaoyuanzhang.onmicrosoft.com to shared-employee@gaoyuanzhang.onmicrosoft.com
+信息: Disconnected successfully !
+
+馃幆 Shared mailbox permissions assignment complete!
+
+馃З Step 5: Exporting Microsoft 365 Report...
+馃搳 Generating Microsoft 365 comprehensive user report...
+Welcome to Microsoft Graph!
+
+Connected via delegated access using 14d82eec-204b-4c2f-b7e8-296a70dab67e
+Readme: https://aka.ms/graph/sdk/powershell
+SDK Docs: https://aka.ms/graph/sdk/powershell/docs
+API Docs: https://aka.ms/graph/docs
+
+NOTE: You can use the -NoWelcome parameter to suppress this message.
+馃攳 Processing: Admin Shared Mailbox
+馃攳 Processing: Alice Wang
+馃攳 Processing: Alice
+馃攳 Processing: Ava Lin
+馃攳 Processing: Bob Chen
+馃攳 Processing: bob
+馃攳 Processing: Charlie Zhang
+馃攳 Processing: Eddie Gao
+馃攳 Processing: Eddie
+馃攳 Processing: Employee Shared Mailbox
+馃攳 Processing: Ethan Liu
+馃攳 Processing: Gaoyuan Zhang
+馃攳 Processing: Kalifa Clarke
+馃攳 Processing: Isabella Fang
+馃攳 Processing: IT Shared Mailbox
+馃攳 Processing: IT Intern 01
+馃攳 Processing: Liam Zhang
+馃攳 Processing: Noah Sun
+馃攳 Processing: Olivia Chen
+馃攳 Processing: Sophia Wang
+馃攳 Processing: William Guo
+馃攳 Processing: Eddie Zhang
+鉁?Report generated successfully: C:\Users\94712\Desktop\M365automation\logs\M365_Comprehensive_Report_20251029_044826.csv
+
+馃搵 Summary:
+ - Total Users: 22
+ - Licensed Users: 22
+ - Unlicensed Users: 0
+
+馃幆 All automation tasks completed successfully!
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20251029044837
+**********************
